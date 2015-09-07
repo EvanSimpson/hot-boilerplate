@@ -1,0 +1,13 @@
+.button {
+  composes: button from "../../css/style.css";
+  background-color: #FFF;
+  border: 1px solid #090;
+  color: #090;
+}
+
+.notification {
+  padding: 30px;
+  background: #3090C7;
+  color: #FFF;
+  width: ;
+}

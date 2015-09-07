@@ -1,0 +1,7 @@
+.container {
+  composes: container from "../../css/style.css";
+}
+
+.header {
+  font-size: 30px;
+}

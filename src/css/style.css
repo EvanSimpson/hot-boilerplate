@@ -1,0 +1,13 @@
+.button {
+  background-color: #009;
+  border: 0;
+  border-radius: 3px;
+  color: #FFF;
+  height: 36px;
+  min-width: 164px;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
