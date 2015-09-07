@@ -1,0 +1,41 @@
+{
+  "name": "hot-boilerplate",
+  "version": "0.0.1",
+  "homepage": "https://github.com/EvanSimpson/hot-boilerplate",
+  "description": "React, Redux, i18n, Webpack-hot-loaded, modular css boilerplate with a11y warnings",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": { 
+    "type": "git",
+    "url": "git://github.com:EvanSimpson/hot-boilerplate.git"
+  },
+  "author": "EvanSimpson <me@evansimpson.com>",
+  "license": "MIT",
+  "dependencies": {
+    "intl": "^1.0.0",
+    "normalize.css": "^3.0.3",
+    "react": "^0.13.3",
+    "react-intl": "^1.2.0",
+    "react-redux": "^2.1.0",
+    "redux": "^2.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer-core": "^6.0.1",
+    "babel-core": "^5.8.23",
+    "babel-loader": "^5.3.2",
+    "babel-runtime": "^5.8.20",
+    "del": "^2.0.1",
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.6",
+    "immutable": "^3.7.5",
+    "postcss-color-rebeccapurple": "^1.2.0",
+    "postcss-loader": "^0.6.0",
+    "react-a11y": "^0.2.6",
+    "react-hot-loader": "^1.3.0",
+    "redux-devtools": "^2.1.0",
+    "webpack": "^1.12.1",
+    "webpack-dev-server": "^1.10.1"
+  }
+}
