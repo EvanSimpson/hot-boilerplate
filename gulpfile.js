@@ -8,12 +8,7 @@ var webpackConfig = require("./webpack.config.js");
 var paths = {
   assets: "src/assets/**",
   dist: "dist/",
-  html: "src/index.html",
-  js: "src/scripts/**/*.js",
-  jsEntry: "src/scripts/App.js",
-  sass: "src/sass/**/*.scss",
-  sassEntry: "src/sass/main.scss",
-  tmp: "tmp/"
+  html: "src/index.html"
 };
 
 // The development server (the recommended option for development)
