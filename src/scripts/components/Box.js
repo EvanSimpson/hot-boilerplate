@@ -12,6 +12,7 @@ import { button, notification } from "./Box.css";
 export default class Box extends React.Component {
 
   static propTypes = {
+    dispatch: PropTypes.func.isRequired,
     state: PropTypes.object.isRequired
   }
 
@@ -41,7 +42,7 @@ export default class Box extends React.Component {
       <div>
         { notification }
         <h3>{ "Click the button to see devtools in action" }</h3>
-        <button onClick={ ::this.handleButtonClick } className={ button }>
+        <button className={ button } onClick={ ::this.handleButtonClick }>
           { "Button!" }
         </button>
       </div>

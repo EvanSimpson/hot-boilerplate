@@ -1,6 +1,6 @@
 "use strict";
 
-import React, { Component, PropTypes } from "react";
+import React from "react";
 import { compose, createStore } from "redux";
 import { Provider } from "react-redux";
 
@@ -28,8 +28,8 @@ function render() {
         <Provider store={store}>
           {() => <App />}
         </Provider>
-        <DebugPanel top right bottom>
-          <DevTools store={store} monitor={LogMonitor} />
+        <DebugPanel bottom right top>
+          <DevTools monitor={LogMonitor} store={store}/>
         </DebugPanel>
       </div>
   , document.getElementById("root"));
