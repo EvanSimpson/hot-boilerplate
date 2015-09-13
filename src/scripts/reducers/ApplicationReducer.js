@@ -10,7 +10,7 @@ const initialState = Immutable.fromJS({
 export default function(state = initialState, action) {
   switch ( action.type ) {
     case "BUTTON_PRESS":
-      return state.set("count", state.get("count")+1)
+      return state.set("count", state.get("count") + 1)
         .set("notification", "Button pressed!");
     default:
       return state;

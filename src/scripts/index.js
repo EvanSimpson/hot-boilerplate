@@ -1,20 +1,27 @@
 "use strict";
 
 import React from "react";
-import { compose, createStore } from "redux";
+import { combineReducers, compose, createStore } from "redux";
 import { Provider } from "react-redux";
 
 import { devTools } from "redux-devtools";
 // React components for Redux DevTools
 import { DevTools, DebugPanel, LogMonitor } from "redux-devtools/lib/react";
 
-import ApplicationReducer from "./reducers/ApplicationReducer";
+import * as reducers from "./reducers";
 
 const finalCreateStore = compose(
   devTools()
 )(createStore);
 
-const store = finalCreateStore(ApplicationReducer);
+const reducer = combineReducers(reducers);
+const store = finalCreateStore(reducer);
+
+if (module.hot) {
+  module.hot.accept("./reducers", () =>
+    store.replaceReducer(combineReducers(require("./reducers")))
+  );
+}
 
 if (process.env.NODE_ENV === "development") {
   var a11y = require("react-a11y");

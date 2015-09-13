@@ -7,9 +7,9 @@ import { button, icon, notification } from "./Box.css";
 
 var svg = require("../../assets/images/checkmark.svg");
 
-@connect ( (state) => {
+@connect ( ({ Application }) => {
   return {
-    state: state
+    state: Application
   }
 })
 export default class Box extends React.Component {
