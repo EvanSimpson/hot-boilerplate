@@ -2,7 +2,10 @@ import React, { PropTypes } from "react";
 import { connect } from "react-redux";
 import { FormattedMessage } from "react-intl";
 
-import { button, notification } from "./Box.css";
+import Icon from "./Icon";
+import { button, icon, notification } from "./Box.css";
+
+var svg = require("../../assets/images/checkmark.svg");
 
 @connect ( (state) => {
   return {
@@ -45,6 +48,10 @@ export default class Box extends React.Component {
         <button className={ button } onClick={ ::this.handleButtonClick }>
           { "Button!" }
         </button>
+        <Icon
+          className={ icon }
+          svg={ svg }
+          />
       </div>
     );
   }

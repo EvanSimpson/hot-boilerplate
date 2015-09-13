@@ -26,7 +26,14 @@ module.exports = {
               loaders: ["react-hot", "babel?optional=runtime"],
               exclude: /node_modules/
             },
-            { test: /\.css$/, loaders: ["style-loader", "css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader"] }
+            { 
+              test: /\.css$/,
+              loaders: ["style-loader", "css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]!postcss-loader"]
+            },
+            {
+              test: /\.svg$/,
+              loader: "svg-inline"
+            }
         ]
     },
 

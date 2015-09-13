@@ -5,6 +5,16 @@
   color: #090;
 }
 
+.icon {
+  margin-left: 8px;
+}
+
+.icon svg {
+  fill: #090;
+  height: 14px;
+  width: 14px;
+}
+
 .notification {
   padding: 30px;
   background: #3090C7;

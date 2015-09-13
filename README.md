@@ -24,11 +24,10 @@ Any changes you make to your components or css should automagically be loaded in
 Things I'm most likely to do next, in no order:
 
 1. Add `react-router`.
-2. Add `url-loader` for SVGs.
-3. Add animations / `CSSTransitionGroup` example
-4. Test the production build path and make sure it does anything
-5. Deal with awkward CSS modules placement (where the hell are css files supposed to go now?)
-6. Pull strings into locale file(s)
+2. Add animations / `CSSTransitionGroup` example
+3. Test the production build path and make sure it does anything
+4. Deal with awkward CSS modules placement (where the hell are css files supposed to go now?)
+5. Pull strings into locale file(s)
 
 #### Note:
 I have no intention of keeping this repository up to date.
